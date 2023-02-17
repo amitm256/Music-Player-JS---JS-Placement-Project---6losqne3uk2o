@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="icon" type="image/x-icon" href="images/fd.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
 
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src = "images/logo.jpg" alt ="logo" >
+                
+                
+
+            </div>
+            <a href = "#">Home</a>
+            <input type = "text" placeholder="Search..">
+            <a href="https://www.jiosaavn.com/shows/kahaaniya/1/SWXbXhBWwtA_">Podcast</a>
+            <a href="https://play.google.com/store/apps">Download app❗</a>
+            <a href="#"> Sign-In</a>
+            <a href="#" class="icon" onclick="shownav()" >
+                <i class="fa fa-bars"></i>
+            </a>
+            
+        </div>
+        <div  id = "player" class="player">
+            <div class="audio-container" id="audio-container">
+                <div class="audio-info">
+                    <h4 id = "title">Pal Behta Jaye</h4>
+                    <div class="progress-container" id = "progress-container">
+                        <div class="progress" id = "progress"></div>
+
+                    </div>
+                </div>
+                <audio src="music/palbehta.mp3" id ="audio"></audio>
+                <div class="img-container">
+                    <img src ="images/palbehta.jpg" alt = "music-cover" id="cover">
+                </div>
+                <div class="navigation">
+                    <button id = "prev" class="action-btn">
+                        <i class ="fas fa-backward"></i>
+                    </button>
+                    <button id = "play" class="action-btn action-btn-big">
+                        <i class ="fas fa-play"></i>
+                    </button>
+                    <button id = "next" class="action-btn">
+                        <i class ="fas fa-forward"></i>
+                    </button>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="content">
+
+<div class="recently">
+
+    <h1> MP3. Playlist </h1><br><br>
+    <div class="recently-cont">
+        <a  onclick =" playthis(0)" ondblclick="pausesong()"class = "song">
+            <img src = "images/palbehta.jpg">
+            <!-- <h5>Pal behta jaye </h5> -->
+        </a>
+        <a   onclick =" playthis(1)" ondblclick="pausesong()" class = "song">
+            <img src = "images/sage.jpg">
+            <!-- <h5> Sage </h5> -->
+        </a>
+        <a   onclick =" playthis(2)" ondblclick="pausesong()" class = "song">
+            <img src = "images/ooantava.jpg">
+            <!-- <h5 style="padding: 15;"> OO antava Mava </h5> -->
+        </a>
+        <a  onclick =" playthis(3)" ondblclick="pausesong()" class = "song">
+            <img src = "images/uddgaye.jpg">
+            <!-- <h5> Udd gaye </h5> -->
+        </a>
+        <a  onclick =" playthis(4)" ondblclick="pausesong()" class = "song">
+            <img src = "images/blindinglights.jpg">
+            <!-- <h5> Blinding lights</h5> -->
+        </a>
+        <a  onclick =" playthis(5)" ondblclick="pausesong()" class = "song">
+            <img src = "images/calmdown.jpg">
+            
+        </a>
+        <br>
+        <h1> Top Trending Songs </h1>
+        <a  onclick =" playthis(6)" ondblclick="pausesong()" class = "song">
+            <img src = "images/naatu.jpg">
+            
+        </a>
+        <a  onclick =" playthis(7)" ondblclick="pausesong()" class = "song">
+            <img src = "images/jhoom.jpg">
+            
+        </a>
+        <a  onclick =" playthis(8)" ondblclick="pausesong()" class = "song">
+            <img src = "images/ratanlambiya.jpg">
+            
+        </a>
+        <a  onclick =" playthis(9)" ondblclick="pausesong()" class = "song">
+            <img src = "images/manike.jpg">
+            
+        </a>
+        <a  onclick =" playthis(10)" ondblclick="pausesong()" class = "song">
+            <img src = "images/safari.jpg">
+            
+        </a>
+        <a  onclick =" playthis(11)" ondblclick="pausesong()" class = "song">
+            <img src = "images/firework.jpg">
+            
+        </a>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src = "script.js"></script>
+</body>
+</html>
